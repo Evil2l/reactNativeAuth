@@ -1,5 +1,6 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import {Button} from './button'
 
 const Header = (props)  => {
     const {textStyle, viewStyles} = styles;
@@ -7,7 +8,6 @@ const Header = (props)  => {
     return(
         <View style={viewStyles}>
             <Text style={textStyle}>{props.headerTittle}</Text>
-
         </View>
 
     )
@@ -21,8 +21,6 @@ const styles = {
         alignItems: 'center',
         height: 60,
         elevation: 4,
-        // shadowOffset: {width: 0, height: 20},
-        // shadowOpacity: 0.2,
         shadowColor: '#000',
         position: 'relative'
     },
